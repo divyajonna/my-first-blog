@@ -1,6 +1,8 @@
-/* to add color to a tag in h1*/
 h1 a {
+  /* to add color to a tag in h1*/
     color: #FCA205;
+    /*to add font to our header*/
+    font-family: 'Lobster';
 }
 
 /*lets- increase the margin on the left side*/
