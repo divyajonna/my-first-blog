@@ -13,4 +13,8 @@ def post_list(request):
     #we want published blog posts sorted by published_date
     posts=Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     return render(request, 'blog/post_list.html', {'posts': posts})
-#render() -- Combines a given template with a given context dictionary and returns an HttpResponse object with that rendered text.
+    #render() -- Combines a given template with a given context dictionary and returns an HttpResponse object with that rendered text.
+
+#create a post detail view of primary key
+  #we want to get one and only one blog post. To do this, we can use querysets, like this:
+Post.objects.get(pk=pk)
