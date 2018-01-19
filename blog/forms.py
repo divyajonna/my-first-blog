@@ -10,4 +10,4 @@ class PostForm(forms.ModelForm):
     class Meta:
         #here we tell Django which model should be used to create this form (model = Post).
         model = Post
-        fields = ('title','text')
+        fields = ('title','text') #fields to end up in this form
