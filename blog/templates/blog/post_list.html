@@ -1,12 +1,16 @@
-
+<!-- Create a templte link to a post detail-->
 {% extends 'blog/base.html' %}
+
         {% block content %}
               {% for post in posts %}
                   <div class="post">
                       <div class="date">
                           <p>published: {{ post.published_date }}</p>
                       </div>
-                      <h1><a href="">{{ post.title }}</a></h1>
+
+                      <!-- have a link from a post's title in the post list to the post's detail page -->
+                      <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+
                       <p>{{ post.text|linebreaksbr }}</p>
                   </div>
               {% endfor %}
