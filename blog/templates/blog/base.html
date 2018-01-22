@@ -9,6 +9,8 @@
     </head>
     <body>
       <div class="page-header">
+
+        <!--this is used to give security for our post for authenticated users-->
         {% if user.is_authenticated %}
             <!--Linked to a page with the form-->
             <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
