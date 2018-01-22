@@ -13,5 +13,6 @@ urlpatterns=[
 
     #url to edit the forms
     #URL in the  file to point Django to a view named post_edit, that will show an entire blog post
-     url(r'^post/(?P<pk>\d+)/edit/$', views.post_edit, name='post_edit'),
+    url(r'^post/(?P<pk>\d+)/edit/$', views.post_edit, name='post_edit'),
+    #editing post done
 ]
